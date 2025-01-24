@@ -74,5 +74,21 @@ class ProductController extends Controller
         return redirect()->route('products');
     }
 
+    public function delete($productId)
+    {
+        $product = Product::findOrFail($productId);
+
+        // 商品に関連する画像をストレージから削除
+        if ($product->image && \Storage::exists($product->image)) {
+            \Storage::delete($product->image);
+        }
+
+        // 商品をデータベースから削除
+        $product->delete();
+
+        // 削除後、リダイレクトして成功メッセージを表示
+        return redirect()->route('products');
+    }
+
 
 }

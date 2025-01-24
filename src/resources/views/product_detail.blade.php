@@ -88,4 +88,13 @@
             <button type="submit">変更を保存</button>
         </div>
     </form>
+    
+    <!-- ゴミ箱アイコンの削除ボタン -->
+    <form action="{{ route('products.delete', ['productId' => $product->id]) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <img src="{{ asset('storage/images/trash-icon.png') }}" alt="削除" style="width: 24px; height: 24px;">
+                </button>
+            </form>
 @endsection
