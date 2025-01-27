@@ -1,0 +1,137 @@
+a,
+h2 {
+    text-decoration: none;
+}
+
+.header__logo {
+    margin: 15px;
+}
+
+.header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 0 20px;
+}
+
+.main {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.content {
+    width: 80%;
+}
+
+/* キーワード検索・並び替え検索 */
+.form__content {
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.form__input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3;
+    color: #d3d3d3;
+}
+
+.form__btn {
+    display: block;
+    width: 100%;
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form__sort-label {
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form__sort-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    color: #d3d3d3;
+}
+
+.sort-tag {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid orange;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.reset-sort {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: orange;
+    border-color: orange;
+}
+
+
+/* ページネーションの全体のスタイル */
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination li.disabled a {
+    color: #ccc;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+}

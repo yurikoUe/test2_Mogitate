@@ -1,42 +1,49 @@
-/* ページネーションの全体のスタイル */
-.pagination-container {
+
+.header__title-btn {
+    padding: 10px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* articleタグ内商品カード */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* カード間のスペース */
+    justify-content: space-between;
+}
+
+.product-card__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.product-card {
+    width: calc(33.3333% - 20px);
+    background-color: white;
+    border-radius: 8px;
     text-align: center;
-    margin-top: 20px;
-}
-
-.pagination {
-    display: inline-flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.pagination li {
-    margin: 0 5px;
-}
-
-.pagination li a {
-    padding: 8px 16px;
     text-decoration: none;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
     color: #333;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
 
-.pagination li a:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.pagination li.active a {
-    background-color: #007bff;
-    color: white;
-}
-
-.pagination li.disabled a {
-    color: #ccc;
-    cursor: not-allowed;
-    border: 1px solid #ccc;
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
 }

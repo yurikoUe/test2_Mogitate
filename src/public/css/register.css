@@ -1,0 +1,89 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.header__logo{
+    padding: 20px;
+    background-color: white;
+}
+
+.header__title,
+.main {
+    margin: 20px 20%;
+}
+
+.form {
+    padding: 15px 0;
+}
+.form__group {
+    padding-bottom: 20px;
+    
+}
+
+.form__label {
+    display: flex;
+    align-items: center;
+}
+
+.form__label-seasons {
+    display: flex;
+}
+
+.form__required {
+    color: white;
+    background-color: red;
+    font-size: 9px;
+    padding: 2px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.form__group input,
+.form__group textarea {
+    width: 100%;
+}
+
+.form__checkbox-group {
+    display: flex;
+}
+
+.form__note {
+    color: red;
+    font-size: 9px;
+}
+
+.form__checkbox-label {
+    display: flex;
+    margin-right: 20px;
+}
+
+.form__actions{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form__back-link,
+.form__submit-button {
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin: 0 5px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.form__back-link{
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.form__submit-button {
+    background-color: orange;
+    border: none;
+}
+
+.form__error {
+    color: red;
+    margin-top: 3px;
+    font-size: 0.8rem;
+}

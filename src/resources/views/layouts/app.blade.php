@@ -12,21 +12,24 @@
 
 <body>
     <header class="header__logo">
-        <img src="{{ asset('storage/images/mogitate.png') }}">
+        <a href="{{ route('products') }}">
+            <img src="{{ asset('storage/images/mogitate.png') }}" alt="もぎたてロゴ">
+        </a>
     </header>
 
-    <header__title>
+    <header class="header__title">
         @yield('header')
-    </header__title>
+    </header>
 
-
-    <aside>
-        @yield('aside')
-    </aside>
-
-    <main>
-        @yield('content')
+    <main class="main">
+        <aside class="sidebar">
+            @yield('aside')
+        </aside>
+        <article class="content">
+            @yield('content')
+        </article>
     </main>
+
 </body>
 
 </html>
