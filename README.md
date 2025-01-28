@@ -3,10 +3,10 @@
 ##　環境構築
 
 ### Dockerビルド
-1. プロジェクトのルートディレクトリに移動し、以下のコマンドでクローンします
-HTTP形式：\
+1. プロジェクトのルートディレクトリに移動し、以下のコマンドでクローンします</br>
+HTTP形式：  
 `git clone https://github.com/yurikoUe/test2_Mogitate.git`
-SSH形式：\
+SSH形式：  
 `git clone git@github.com:yurikoUe/test2_Mogitate.git`
 
 2. `docker-compose up -d --build`
