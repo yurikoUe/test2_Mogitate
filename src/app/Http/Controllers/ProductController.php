@@ -56,9 +56,6 @@ class ProductController extends Controller
             // 新しい画像を保存
             $imagePath = $request->file('image')->store('images', 'public');
             $product->image = $imagePath;
-        } elseif ($request->filled('current_image')) {
-            // 新しい画像がない場合は既存の画像を保持
-            $product->image = $request->input('current_image');
         }
 
         // 季節の更新

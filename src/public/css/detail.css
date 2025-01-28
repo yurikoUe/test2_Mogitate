@@ -29,6 +29,7 @@
 .product-container__input {
     width: 100%;
     padding: 5px;
+    color: #888;
 }
 
 .product-container__seasons {
@@ -43,6 +44,7 @@
 .product-container__description-textarea {
     width: 100%;
     line-height: 1.5;
+    color: #888;
 }
 
 .product-container__bottoms {
